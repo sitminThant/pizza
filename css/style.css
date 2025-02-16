@@ -120,16 +120,16 @@ nav .nav-link li a.active{
 
 
 /*  Hero Section */
-.home {
+#home {
     padding: 0;
     position: relative;
 
 }
-.home .owl-carousel img{
+#home .owl-carousel img{
     height: 700px;
     object-fit: cover;
 }
-.home .owl-carousel .content {
+#home .owl-carousel .content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,13 +145,13 @@ nav .nav-link li a.active{
     flex-direction: column;
     backdrop-filter: blur(7px);
 }
-.home .owl-carousel .content h1{
+#home .owl-carousel .content h1{
     color: var(--primary);
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 1.7rem;
 }
-.home .owl-carousel .content h2{
+#home .owl-carousel .content h2{
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 }
@@ -162,23 +162,21 @@ nav .nav-link li a.active{
     height: 40px;
     background-color: #f2f2f2;
     top: 50%;
-    left: -3%;
+    left: -6%;
     color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    transition: all 0.7s;
+    transition: all 0.5s;
     /* display: none; */
 }
-.owl-carousel:hover .owl-nav button.owl-prev{
-    left: 3%;
-}
+
 .owl-carousel .owl-nav button.owl-next{
     font-size: 40px;
     position: absolute;
     top: 50%;
-    right: 3%;
+    right: -6%;
     color: #000000;
     width: 40px;
     height: 40px;
@@ -187,7 +185,14 @@ nav .nav-link li a.active{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    transition: all .5s;
     /* display: none; */
+}
+.owl-carousel:hover .owl-nav button.owl-prev  {
+    left: 6%;
+}
+.owl-carousel:hover .owl-nav button.owl-next {
+    right: 6%;
 }
 /*  Gallery Section */
 #gallery{
